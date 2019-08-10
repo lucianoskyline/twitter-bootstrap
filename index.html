@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <title>Twitter</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
@@ -10,7 +10,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2">
+                <div class="col-3 col-sm-2">
                     <br/>
                     <ul class="list-group">
                         <li class="list-group-item tw-list-group-item">
@@ -21,37 +21,37 @@
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-home"></span>
-                                Página inicial
+                                <label class="d-none d-xl-inline">Página inicial</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-hashtag"></span>
-                                Explorar
+                                <label class="d-none d-xl-inline">Explorar</label>                                
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-bell"></span>
-                                Notificações
+                                <label class="d-none d-xl-inline">Notificações</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-envelope"></span>
-                                Mensagens
+                                <label class="d-none d-xl-inline">Mensagens</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-bookmark"></span>
-                                Itens salvos
+                                <label class="d-none d-xl-inline">Itens salvos</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-list"></span>
-                                Listas
+                                <label class="d-none d-xl-inline">Listas</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
@@ -59,23 +59,26 @@
                                 <span>
                                     <img src="images/profile.png" style="width: 24px;margin-right: 10px" class="rounded-circle"/>
                                 </span>
-                                Perfil
+                                <label class="d-none d-xl-inline">Perfil</label>
                             </a>
                         </li>
                         <li class="list-group-item tw-list-group-item">
                             <a href="#" class="tw-link">
                                 <span class="fa fa-ellipsis-h"></span>
-                                Mais
+                                <label class="d-none d-xl-inline">Mais</label>
                             </a>
                         </li>
                     </ul>
                     <br/>
-                    <button class="btn btn-light btn-block btn-lg tw-btn-primary">Tweet</button>
+                    <button class="btn btn-light btn-block btn-lg tw-btn-primary d-none d-lg-block">Tweet</button>
+                    <button class="btn btn-light btn-block btn-lg tw-btn-primary d-lg-none">
+                        <span class="fa fa-pencil"></span>
+                    </button>
                 </div>
-                <div class="col-7 tw-border-left tw-border-right">
+                <div class="col-9 col-sm-7 tw-border-right">
                     <br/>
                     <div class="row tw-border-bottom">
-                        <div class="col-11">
+                        <div class="col-10 col-md-11">
                             <h5><strong>Página inicial</strong></h5>
                         </div>
                         <div class="col-1">
@@ -83,29 +86,72 @@
                         </div>
                     </div>
                     <br/>
-                    <div class="row">
-                        <div class="col-1">
-                            <img src="images/profile.png" style="width: 38px;margin-right: 10px" class="rounded-circle"/>
+
+                    <div class="d-none d-xl-block d-md-none">
+                        <div class="row">
+                                <div class="col-2 col-md-1">
+                                    <img src="images/profile.png" style="width: 38px;margin-right: 10px" class="rounded-circle"/>
+                                </div>
+                                <div class="col-10 col-md-11">
+                                    <input class="form-control tw-input-light" placeholder="O que está acontecendo?"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row tw-separator">
+                                <div class="col-10">
+                                    <span class="fa fa-image"></span>
+                                    <span class="fa fa-smile-o"></span>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn tw-btn-primary" disabled>Tweet</button>
+                                </div>
+                                <br/><br/>
+                            </div>
+                    </div>
+
+
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
+                            <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
                         </div>
-                        <div class="col-11">
-                            <input class="form-control tw-input-light" placeholder="O que está acontecendo?"/>
+                        <div class="col-10 col-md-11">
+                            <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 5s</lablel><br/>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
+                                Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
+                            </p>
+                            <span class="fa fa-comment-o"></span>
+                            <span class="fa fa-retweet"></span>
+                            <span class="fa fa-heart-o"></span>
+                            <span class="fa fa-upload"></span>
+                            <p/>
                         </div>
                     </div>
-                    <br/>
-                    <div class="row">
-                        <div class="col-10">
-                            <span class="fa fa-image"></span>
-                            <span class="fa fa-smile-o"></span>
+                    
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
+                            <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
+                        </div>
+                        <div class="col-10 col-md-11">
+                                <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 30s</lablel><br/>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
+                                Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
+                            </p>
+                            <span class="fa fa-comment-o"></span>
+                            <span class="fa fa-retweet"></span>
+                            <span class="fa fa-heart-o"></span>
+                            <span class="fa fa-upload"></span>
+                            <p/>
                         </div>
                     </div>
 
-                    <br/>
-                    <div class="row tw-border-bottom">
-                        <div class="col-1">
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
                             <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
                         </div>
-                        <div class="col-10">
-                            <b>Lorem ipsum dolor sit amet</b> @loremipsum · 5s<br/>
+                        <div class="col-10 col-md-11">
+                                <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 35s</lablel><br/>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
                                 Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
@@ -114,15 +160,16 @@
                             <span class="fa fa-retweet"></span>
                             <span class="fa fa-heart-o"></span>
                             <span class="fa fa-upload"></span>
+                            <p/>
                         </div>
                     </div>
-                    <br/>
-                    <div class="row tw-border-bottom">
-                        <div class="col-1">
+
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
                             <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
                         </div>
-                        <div class="col-10">
-                            <b>Lorem ipsum dolor sit amet</b> @loremipsum · 30s<br/>
+                        <div class="col-10 col-md-11">
+                                <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 35 min</lablel><br/>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
                                 Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
@@ -131,15 +178,16 @@
                             <span class="fa fa-retweet"></span>
                             <span class="fa fa-heart-o"></span>
                             <span class="fa fa-upload"></span>
+                            <p/>
                         </div>
                     </div>
-                    <br/> 
-                    <div class="row tw-border-bottom">
-                        <div class="col-1">
+
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
                             <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
                         </div>
-                        <div class="col-10">
-                            <b>Lorem ipsum dolor sit amet</b> @loremipsum · 35s<br/>
+                        <div class="col-10 col-md-11">
+                                <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 35 min</lablel><br/>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
                                 Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
@@ -148,11 +196,30 @@
                             <span class="fa fa-retweet"></span>
                             <span class="fa fa-heart-o"></span>
                             <span class="fa fa-upload"></span>
+                            <p/>
                         </div>
-                    </div>
-                    <br/>                                       
+                    </div>           
+                    
+                    <div class="row tw-border-bottom tw-timeline">
+                        <div class="col-2 col-md-1">
+                            <img src="images/profile.png" style="width: 42px" class="rounded-circle"/>
+                        </div>
+                        <div class="col-10 col-md-11">
+                                <b>Lorem ipsum dolor</b><lablel class="tw-label"> @loremipsum · 35 min</lablel><br/>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non molestie velit. Etiam sit amet tincidunt sem.
+                                Mauris enim elit, semper et nisl in, sollicitudin luctus odio.
+                            </p>
+                            <span class="fa fa-comment-o"></span>
+                            <span class="fa fa-retweet"></span>
+                            <span class="fa fa-heart-o"></span>
+                            <span class="fa fa-upload"></span>
+                            <p/>
+                        </div>
+                    </div>                     
+                    
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-none d-xl-block d-md-none">
                     <br/>
                     <div class="row">
                         <div class="col-12">
@@ -231,7 +298,10 @@
                                     </div>                                    
 
 
-                                    <a class="tw-link tw-link-primary" href="#">Mostrar mais</a>
+                                    <a class="tw-link tw-link-primary" href="#">Mostrar mais</a><br/><br/>
+                                    <a href="#" class="tw-link-light">Termos Política de privacidade</a> <a href="#" class="tw-link-light">Cookies</a><br/>
+                                    <a href="#" class="tw-link-light">Informações de anúncios</a> <a href="#" class="tw-link-light">Mais</a><br/>
+                                    <label class="tw-label">© 2019 Twitter, Inc.</label>
                                 </div>
                             </div>
                         </div>
