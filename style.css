@@ -11,7 +11,12 @@
 .tw-link{
     color: #13171a;
     font-weight: 700;
-    text-transform: none;
+    text-decoration: none !important;
+}
+
+.tw-link-primary{
+    color: #009df6;
+    font-weight: 400;
 }
 
 .tw-link:hover{
@@ -22,6 +27,52 @@
     color: #90a0ab;
 }
 
+.card-body .tw-label{
+    font-size: 12px;
+}
+
+.tw-border-right{
+    border-right: solid 1px #e5ecf0 !important;
+}
+
+.tw-border-left{
+    border-left: solid 1px #e5ecf0 !important;
+}
+
 .tw-list-group-item {
     border: none;
+}
+
+.tw-input-light{
+    border:none;
+}
+
+.tw-input-gray{
+    background-color: #e5ecf0;
+    border-radius: 20px;
+    border:none;
+}
+
+.tw-card{
+    background-color: #f4f8fa;
+    border-radius: 20px;
+    border: none;
+}
+
+.tw-card-item:hover{
+    background-color: rgb(101, 119, 134);
+}
+
+.tw-card-title{
+    font-size: 18px;
+}
+
+.fa{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.fa-twitter{
+    color: #009df6;
+    font-size: 34px;
 }
