@@ -1,0 +1,27 @@
+.tw-btn-primary{
+    background-color: #009df6;
+    color: white;
+    border-radius: 20px;
+}
+
+.tw-card-gray{
+    background-color: #f4f8fa;
+}
+
+.tw-link{
+    color: #13171a;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.tw-link:hover{
+    color: #009df6;
+}
+
+.tw-label{
+    color: #90a0ab;
+}
+
+.tw-list-group-item {
+    border: none;
+}
