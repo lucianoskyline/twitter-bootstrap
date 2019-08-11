@@ -80,6 +80,16 @@
     border:none;
 }
 
+.tw-img-preview{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.tw-card-text{
+    font-size: 14px;
+    color: #90a0ab;
+}
+
 .tw-input-gray{
     background-color: #e5ecf0;
     border-radius: 20px;
